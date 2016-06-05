@@ -1,1 +1,2 @@
-# MMDVM Raspberry Pi Image Setup
+# mmdvm-image
+MMDVM Raspberry Pi Image Setup
