@@ -14,8 +14,7 @@
   - chmod +x /home/pi/Scripts/*.sh
 
 3. Run first install file
-  - cd /home/pi/Scripts
-  - ./install.sh
+  - /home/pi/Scripts/install.sh
 
 4. Add Ham Radio Menu in XFCE
 
@@ -38,3 +37,25 @@
     - Action Items - Add Restart
     - Remove Lower Panel
   - Set Background
+
+6. Install Applications
+  - /home/pi/Scripts/install_apps.sh
+  
+7. Create Shortcuts
+  - /home/pi/Scripts/shortcuts.sh
+
+8. Create Service
+  - /home/pi/Scripts/create_service.sh
+
+9. Run from Ham Radio Menu
+  - Rebuild From Source
+  - Reset MMDVM.ini
+
+10. Build ircDDBGateway (OPTIONAL)
+  - cd /home/pi/Applications/OpenDV/ircDDBGateway
+  - ./configure
+  - make
+  - sudo make install
+
+11. Cleanup
+  - /home/pi/Scripts/cleanup.sh
