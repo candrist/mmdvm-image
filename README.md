@@ -1,5 +1,11 @@
-# MMDVM Raspberry Pi Image Setup
+# MMDVM Raspberry Pi Image Scripts
 
+### Purpose
+This will enable you to take a stock Raspbian Jessie Lite and have a complete MMDVM System.
+
+It uses XFCE4 for the GUI and you can access it via rdp.
+
+### Step-by-Step
 1. Basic Raspberry Pi Config
   - sudo raspi-config
     - Expand Filesystem
