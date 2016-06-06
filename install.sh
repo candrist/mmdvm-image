@@ -53,8 +53,6 @@ sudo sed -i -e 's/Exec=\/usr\/sbin\/wpa_gui/Exec=sudo \/usr\/sbin\/wpa_gui/' /us
 
 sudo cp /usr/share/applications/wpa_gui.desktop /home/pi/Desktop/wpa_gui.desktop
 
-sudo sed -i -e 's/Categories=Development;IDE;Electronics;/Categories=HamRadio/' /usr/share/applications/arduino-arduinoide.desktop
-
 sudo sed -i '/NotShowIn=/d' /usr/share/applications/rc_gui.desktop
 
 sudo sed -i -e 's/Exec=synaptic-pkexec/Exec=sudo synaptic-pkexec/' /usr/share/applications/synaptic.desktop
