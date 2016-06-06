@@ -18,7 +18,7 @@ git clone https://github.com/g4klx/MMDVMHost.git /home/pi/Applications/MMDVMHost
 git clone https://github.com/g4klx/MMDVMCal.git /home/pi/Applications/MMDVMCal
 git clone https://github.com/dl5di/OpenDV.git /home/pi/Applications/OpenDV
 
-#cd /home/pi/Applications/OpenDV/ircDDBGateway
-#./configure
-#make
-#sudo make install
+# cd /home/pi/Applications/OpenDV/ircDDBGateway
+# ./configure
+# make
+# sudo make install
