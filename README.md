@@ -10,15 +10,19 @@ MMDVM Raspberry Pi Image Setup
  - sudo reboot
 
 2. Download Scripts
-mkdir -p /home/pi/Applications
-git clone https://github.com/candrist/mmdvm-image.git /home/pi/Scripts
-chmod +x /home/pi/Scripts/*.sh
+  - mkdir -p /home/pi/Applications
+  - git clone https://github.com/candrist/mmdvm-image.git /home/pi/Scripts
+  - chmod +x /home/pi/Scripts/*.sh
 
+3. Run first install file
+  - cd /home/pi/Scripts
+  - ./install.sh
 
-3. Add Ham Radio Menu
-sudo nano /etc/xdg/menus/xfce-applications.menu
+4. Add Ham Radio Menu in XFCE
 
-add ham radio section
+  - sudo nano /etc/xdg/menus/xfce-applications.menu
+
+Add Ham Radio Section
 
     <Menu>
         <Name>HamRadio</Name>
