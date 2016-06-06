@@ -1,5 +1,4 @@
-# mmdvm-image
-MMDVM Raspberry Pi Image Setup
+# MMDVM Raspberry Pi Image Setup
 
 
 1. Basic Raspberry Pi Config
