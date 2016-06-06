@@ -95,7 +95,7 @@ cat > /usr/share/applications/mmdvm-update.desktop << EOL
 Type=Application
 Name=Update All
 GenericName=Update All
-Exec=/home/pi/update.sh
+Exec=/home/pi/Scripts/update.sh
 Icon=
 Terminal=true
 Categories=HamRadio;
@@ -106,7 +106,7 @@ cat > /usr/share/applications/mmdvm-rebuild.desktop << EOL
 Type=Application
 Name=Rebuild From Source
 GenericName=Rebuild From Source
-Exec=/home/pi/rebuild.sh
+Exec=/home/pi/Scripts/rebuild.sh
 Icon=
 Terminal=true
 Categories=HamRadio;
@@ -117,7 +117,7 @@ cat > /usr/share/applications/mmdvm-resetini.desktop << EOL
 Type=Application
 Name=Reset MMDVM.ini
 GenericName=Reset MMDVM.ini
-Exec=/home/pi/resetini.sh
+Exec=/home/pi/Scripts/resetini.sh
 Icon=
 Terminal=true
 Categories=HamRadio;
