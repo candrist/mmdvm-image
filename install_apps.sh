@@ -8,6 +8,7 @@ tar xfv /home/pi/Downloads/arduino-1.6.9-linuxarm.tar.xz -C /home/pi/Application
 /home/pi/Applications/arduino-1.6.9/install.sh
 
 sudo mv /home/pi/.local/share/applications/arduino-arduinoide.desktop /usr/share/applications/arduino-arduinoide.desktop
+sudo sed -i -e 's/Categories=Development;IDE;Electronics;/Categories=HamRadio/' /usr/share/applications/arduino-arduinoide.desktop
 rm -Rf /home/pi/Desktop/arduino-arduinoide.desktop
 rm -Rf /home/pi/.gnome/apps/arduino-arduinoide.desktop
 rm -Rf /home/pi/Downloads/arduino-1.6.9-linuxarm.tar.xz
