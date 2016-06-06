@@ -22,8 +22,9 @@ MMDVM Raspberry Pi Image Setup
 
   - sudo nano /etc/xdg/menus/xfce-applications.menu
 
-Add Ham Radio Section
+  - Add Ham Radio Section
 
+  ```xml
     <Menu>
         <Name>HamRadio</Name>
         <Directory>ham-radio.directory</Directory>
@@ -31,3 +32,10 @@ Add Ham Radio Section
             <Category>HamRadio</Category>
         </Include>
     </Menu>
+  ```
+
+5. XFCE Customizations
+  - Panel
+    - Action Items - Add Restart
+    - Remove Lower Panel
+  - Set Background
