@@ -5,7 +5,7 @@ This will enable you to take a stock Raspbian Jessie Lite and have a complete MM
 
 It uses XFCE4 for the GUI and you can access it via rdp.
 
-This is created by Chris Andrist, KC7WSU. This process is used to create the DMR-UTAH MMDVM Images available [here.](http://www.dmr-utah.net/support/mmdvm/images/).
+This is created by Chris Andrist, KC7WSU. This process is used to create the DMR-UTAH MMDVM Images available [here.](http://www.dmr-utah.net/support/mmdvm/images/)
 
 ### Step-by-Step
 1. Basic Raspberry Pi Config
