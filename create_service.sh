@@ -23,9 +23,9 @@ OnStartupSec=60
 WantedBy=multi-user.target
 EOL
 
-sudo chmod 755 /lib/systemd/system/mmdvmhost.service
-sudo ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.service
-sudo chmod 755 /lib/systemd/system/mmdvmhost.timer
-sudo ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.timer
-sudo systemctl daemon-reload
-sudo systemctl enable mmdvmhost.timer
+chmod 755 /lib/systemd/system/mmdvmhost.service
+ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.service
+chmod 755 /lib/systemd/system/mmdvmhost.timer
+ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.timer
+systemctl daemon-reload
+systemctl enable mmdvmhost.timer
