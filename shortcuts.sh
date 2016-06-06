@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo su
-
 cat > /usr/share/applications/mmdvm-edit_mmdvmini.desktop << EOL
 [Desktop Entry]
 Type=Application
@@ -144,5 +142,3 @@ Icon=
 Terminal=false
 Categories=HamRadio;
 EOL
-
-exit
