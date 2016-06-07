@@ -126,7 +126,7 @@ cat > /usr/share/applications/mmdvm-ircddb.desktop << EOL
 Type=Application
 Name=ircDDB Gateway
 GenericName=ircDDB Gateway
-Exec=sudo ircddbgateway -gui -nolog
+Exec=ircddbgateway -gui -nolog
 Icon=
 Terminal=false
 Categories=HamRadio;
@@ -139,7 +139,7 @@ cat > /usr/share/applications/mmdvm-ircddb_gui_config.desktop << EOL
 Type=Application
 Name=ircDDB Gateway Graphical Config
 GenericName=ircDDB Gateway Graphical Config
-Exec=sudo ircddbgatewayconfig
+Exec=ircddbgatewayconfig
 Icon=
 Terminal=false
 Categories=HamRadio;
