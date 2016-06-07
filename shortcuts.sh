@@ -126,19 +126,32 @@ cat > /usr/share/applications/mmdvm-ircddb.desktop << EOL
 Type=Application
 Name=ircDDB Gateway
 GenericName=ircDDB Gateway
-Exec=ircddbgateway -gui -nolog
+Exec=sudo ircddbgateway -gui -nolog
 Icon=
 Terminal=false
 Categories=HamRadio;
 EOL
 
-cat > /usr/share/applications/mmdvm-ircddbconfig.desktop << EOL
+rm -Rf /usr/share/applications/mmdvm-ircddbconfig.desktop
+
+cat > /usr/share/applications/mmdvm-ircddb_gui_config.desktop << EOL
 [Desktop Entry]
 Type=Application
-Name=ircDDB Gateway Config
-GenericName=ircDDB Gateway Config
+Name=ircDDB Gateway Graphical Config
+GenericName=ircDDB Gateway Graphical Config
 Exec=sudo ircddbgatewayconfig
 Icon=
 Terminal=false
+Categories=HamRadio;
+EOL
+
+cat > /usr/share/applications/mmdvm-ircddb_cli_config.desktop << EOL
+[Desktop Entry]
+Type=Application
+Name=ircDDB Gateway Command Line Config
+GenericName=ircDDB Gateway Command Line Config
+Exec=sudo ircddbgw_conf
+Icon=
+Terminal=true
 Categories=HamRadio;
 EOL
