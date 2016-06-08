@@ -20,7 +20,7 @@ git clone https://github.com/g4klx/MMDVM.git /home/pi/Applications/MMDVM
 git clone https://github.com/g4klx/MMDVMHost.git /home/pi/Applications/MMDVMHost
 git clone https://github.com/g4klx/MMDVMCal.git /home/pi/Applications/MMDVMCal
 #Install ircDDBGateway From DEB
-sudo apt-get -y install libwxbase2.8-0 libwxgtk2.8-0 gawk ntpdate libsigsegv2
+#sudo apt-get -y install libwxbase2.8-0 libwxgtk2.8-0 gawk ntpdate libsigsegv2
 wget -O /home/pi/Downloads/opendvdata_20151116-2_all.deb http://download.prgm.org/dl5di-soft/opendv/repositories/raspbian/opendvdata_20151116-2_all.deb
 wget -O /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb http://download.prgm.org/dl5di-soft/opendv/repositories/raspbian/ircddbgateway_20151116-2_armhf.deb
 sudo dpkg -i /home/pi/Downloads/opendvdata_20151116-2_all.deb
