@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Create Shortcuts in Ham Radio Menu
 cat > /usr/share/applications/mmdvm-edit_mmdvmini.desktop << EOL
 [Desktop Entry]
 Type=Application
@@ -132,6 +133,7 @@ Terminal=false
 Categories=HamRadio;
 EOL
 
+#Remove Old Shortcut
 rm -Rf /usr/share/applications/mmdvm-ircddbconfig.desktop
 
 cat > /usr/share/applications/mmdvm-ircddb_gui_config.desktop << EOL
