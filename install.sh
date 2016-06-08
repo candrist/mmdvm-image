@@ -11,7 +11,7 @@ sudo apt-get update /
 && sudo apt-get -y autoremove /
 && sudo apt-get -y autoclean
 
-#Create PolicyKit File - This Alloww You to Shutdown and Restart the Pi from XFCE
+#Create PolicyKit File - This Allows You to Shutdown and Restart the Pi from XFCE
 sudo su
 cat > /etc/polkit-1/localauthority/50-local.d/org.freedesktop.pkla << EOL
 [freedesktop]
