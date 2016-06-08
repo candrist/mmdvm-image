@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Create Service File
 cat > /lib/systemd/system/mmdvmhost.service << EOL
 [Unit]
 Description=MMDVM Host Service
@@ -15,6 +16,7 @@ ExecStop=/usr/bin/screen -S MMDVMHost -X quit
 WantedBy=multi-user.target
 EOL
 
+#Create Timer - 60sec Delay
 cat > /lib/systemd/system/mmdvmhost.timer << EOL
 [Timer]
 OnStartupSec=60
@@ -23,9 +25,12 @@ OnStartupSec=60
 WantedBy=multi-user.target
 EOL
 
+#Make Service and Timer Executable
 chmod 755 /lib/systemd/system/mmdvmhost.service
-ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.service
 chmod 755 /lib/systemd/system/mmdvmhost.timer
+#Create Symbolic Link for Service
 ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.timer
+ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.service
+#Pickup New Service and Enable Timer
 systemctl daemon-reload
 systemctl enable mmdvmhost.timer
