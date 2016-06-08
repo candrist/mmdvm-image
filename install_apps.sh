@@ -3,6 +3,8 @@
 mkdir -p /home/pi/Applications
 sudo mkdir -p /usr/local/var/log/opendv
 sudo chown pi:pi /usr/local/var/log/opendv
+sudo mkdir -p /usr/local/etc/opendv
+sudo chown pi:pi /usr/local/etc/opendv
 
 wget -O /home/pi/Downloads/arduino-1.6.9-linuxarm.tar.xz http://www.dmr-utah.net/support/mmdvm/arduino-1.6.9-linuxarm.tar.xz
 tar xfv /home/pi/Downloads/arduino-1.6.9-linuxarm.tar.xz -C /home/pi/Applications/
