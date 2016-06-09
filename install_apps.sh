@@ -2,10 +2,6 @@
 
 #Directory Pre-Requisites
 mkdir -p /home/pi/Applications
-sudo mkdir -p /usr/local/var/log/opendv
-sudo chown pi:pi /usr/local/var/log/opendv
-sudo mkdir -p /usr/local/etc/opendv
-sudo chown pi:pi /usr/local/etc/opendv
 #Download and Install Arduino IDE
 wget -O /home/pi/Downloads/arduino-1.6.9-linuxarm.tar.xz http://www.dmr-utah.net/support/mmdvm/arduino-1.6.9-linuxarm.tar.xz
 tar xfv /home/pi/Downloads/arduino-1.6.9-linuxarm.tar.xz -C /home/pi/Applications/
@@ -26,9 +22,16 @@ wget -O /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb http://download.pr
 sudo dpkg -i /home/pi/Downloads/opendvdata_20151116-2_all.deb
 sudo dpkg -i /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb
 rm -Rf /home/pi/Downloads/opendvdata_20151116-2_all.deb /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb
+sudo mkdir -p /home/opendv/ircddbgateway
+sudo chmod -R 0777 /home/opendv/ircddbgateway
 #Build ircDDBGateway From Source
 # git clone https://github.com/dl5di/OpenDV.git /home/pi/Applications/OpenDV
 # cd /home/pi/Applications/OpenDV/ircDDBGateway
 # ./configure
 # make
 # sudo make install
+#For From Source
+#sudo mkdir -p /usr/local/var/log/opendv
+#sudo chown pi:pi /usr/local/var/log/opendv
+#sudo mkdir -p /usr/local/etc/opendv
+#sudo chown pi:pi /usr/local/etc/opendv
