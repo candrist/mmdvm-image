@@ -72,6 +72,9 @@ sudo sed -i -e 's/background=\/usr\/share\/images\/desktop-base\/login-backgroun
 # DV-Mega Mods
 sudo systemctl stop serial-getty@ttyAMA0.service
 sudo systemctl disable serial-getty@ttyAMA0.service
+sudo systemctl stop hciuart
+sudo systemctl disable hciuart
+sudo sed -i -e 's/enable_uart=0/enable_uart=1/' /boot/config.txt
 sudo bash -c 'echo " " >> /boot/config.txt'
 sudo bash -c 'echo "# Disable Bluetooth on Raspberry Pi 3" >> /boot/config.txt'
 sudo bash -c 'echo "dtoverlay=pi3-disable-bt" >> /boot/config.txt'
