@@ -1,19 +1,19 @@
 #!/bin/bash
 
 #Update, Upgrade and Install Required Software
-sudo apt-get update /
-&& sudo apt-get -y dist-upgrade /
-&& sudo apt-get -y install xserver-xorg xinit /
-&& sudo apt-get -y install xfce4 xfce4-goodies / 
-&& sudo apt-get -y install lightdm wpagui /
-&& sudo apt-get -y install software-properties-common python-software-properties build-essential debian-keyring oracle-java8-jdk mousepad iceweasel rc-gui git mlocate synaptic screen xrdp piclone geany /
+sudo apt-get update
+sudo apt-get -y dist-upgrade
+sudo apt-get -y install xserver-xorg xinit
+sudo apt-get -y install xfce4 xfce4-goodies
+sudo apt-get -y install lightdm wpagui
+sudo apt-get -y install software-properties-common python-software-properties build-essential debian-keyring oracle-java8-jdk mousepad iceweasel rc-gui git mlocate synaptic screen xrdp piclone geany
 #Older ircircDDBGateway
-&& sudo apt-get -y install libwxbase2.8-0 libwxgtk2.8-0 gawk ntpdate libsigsegv2 /
+sudo apt-get -y install libwxbase2.8-0 libwxgtk2.8-0 gawk ntpdate libsigsegv2
 #Newer ircDDBGateway
 # && sudo apt-get -y install libwxgtk3.0-dev portaudio19-dev libusb-1.0-0-dev chkconfig python-serial wiringPi / 
-&& sudo apt-get -y remove xscreensaver xscreensaver-data xfburn / 
-&& sudo apt-get -y autoremove /
-&& sudo apt-get -y autoclean
+sudo apt-get -y remove xscreensaver xscreensaver-data xfburn
+sudo apt-get -y autoremove
+sudo apt-get -y autoclean
 
 #Create PolicyKit File - This Allows You to Shutdown and Restart the Pi from XFCE
 sudo su
