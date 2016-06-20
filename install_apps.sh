@@ -22,9 +22,10 @@ wget -O /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb http://download.pr
 sudo dpkg -i /home/pi/Downloads/opendvdata_20151116-2_all.deb
 sudo dpkg -i /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb
 rm -Rf /home/pi/Downloads/opendvdata_20151116-2_all.deb /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb
-sudo mkdir -p /home/opendv/ircddbgateway
-sudo chown -R opendv:opendv /home/opendv/ircddbgateway
-sudo adduser pi opendv
+#ircDDBGateway Permissions
+#sudo mkdir -p /home/opendv/ircddbgateway
+#sudo chown -R opendv:opendv /home/opendv/ircddbgateway
+#sudo adduser pi opendv
 #Build ircDDBGateway From Source
 # git clone https://github.com/dl5di/OpenDV.git /home/pi/Applications/OpenDV
 # cd /home/pi/Applications/OpenDV/ircDDBGateway
