@@ -25,7 +25,7 @@ rm -Rf /home/pi/Downloads/opendvdata_20151116-2_all.deb /home/pi/Downloads/ircdd
 #ircDDBGateway Permissions
 #sudo mkdir -p /home/opendv/ircddbgateway
 #sudo chown -R opendv:opendv /home/opendv/ircddbgateway
-#sudo adduser pi opendv
+sudo adduser pi opendv
 #Build ircDDBGateway From Source
 # git clone https://github.com/dl5di/OpenDV.git /home/pi/Applications/OpenDV
 # cd /home/pi/Applications/OpenDV/ircDDBGateway
