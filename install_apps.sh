@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Put wpa_gui on Desktop
+cp /usr/share/applications/wpa_gui.desktop /home/pi/Desktop/wpa_gui.desktop
 #Directory Pre-Requisites
 mkdir -p /home/pi/Applications
 #Download and Install Arduino IDE
