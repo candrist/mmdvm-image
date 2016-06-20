@@ -19,7 +19,7 @@ This is created by Chris Andrist, KC7WSU. This process is used to create the DMR
   - git clone https://github.com/candrist/mmdvm-image.git /home/pi/Scripts
 
 3. Run initial install file
-  - /home/pi/Scripts/install.sh
+  - sudo /home/pi/Scripts/install.sh
 
 4. Add Ham Radio Menu to XFCE
 
