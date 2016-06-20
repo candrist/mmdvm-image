@@ -23,7 +23,7 @@ sudo dpkg -i /home/pi/Downloads/opendvdata_20151116-2_all.deb
 sudo dpkg -i /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb
 rm -Rf /home/pi/Downloads/opendvdata_20151116-2_all.deb /home/pi/Downloads/ircddbgateway_20151116-2_armhf.deb
 sudo mkdir -p /home/opendv/ircddbgateway
-sudo chmod -R 0777 /home/opendv/ircddbgateway
+usermod -aG pi opendv
 #Build ircDDBGateway From Source
 # git clone https://github.com/dl5di/OpenDV.git /home/pi/Applications/OpenDV
 # cd /home/pi/Applications/OpenDV/ircDDBGateway
