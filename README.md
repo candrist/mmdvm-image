@@ -20,6 +20,7 @@ This is created by Chris Andrist, KC7WSU. This process is used to create the DMR
 
 3. Run initial install file
   - sudo /home/pi/Scripts/install.sh
+  - sudo reboot
 
 4. Add Ham Radio Menu to XFCE
 
