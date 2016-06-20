@@ -53,8 +53,6 @@ cp /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml /etc/x
 sed -i -e 's/<property name="\&lt;Super\&gt;Tab" type="string" value="switch_window_key"\/>/<property name="\&lt;Super\&gt;Tab" type="empty"\/>/' /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 #Enable wpa_gui to Make Changes to wpa_supplicant.conf
 sed -i -e 's/Exec=\/usr\/sbin\/wpa_gui/Exec=sudo \/usr\/sbin\/wpa_gui/' /usr/share/applications/wpa_gui.desktop
-#Put wpa_gui on Desktop
-cp /usr/share/applications/wpa_gui.desktop /home/pi/Desktop/wpa_gui.desktop
 #Enables Raspberry Pi Config App in XFCE
 sed -i '/NotShowIn=/d' /usr/share/applications/rc_gui.desktop
 #Enables Synaptics Package Manager to Run
