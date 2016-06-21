@@ -58,11 +58,5 @@ This is created by Chris Andrist, KC7WSU. This process is used to create the DMR
   - Rebuild From Source
   - Reset MMDVM.ini
 
-10. Build ircDDBGateway (OPTIONAL)
-  - cd /home/pi/Applications/OpenDV/ircDDBGateway
-  - ./configure
-  - make
-  - sudo make install
-
-11. Cleanup
+10. Cleanup
   - /home/pi/Scripts/cleanup.sh
