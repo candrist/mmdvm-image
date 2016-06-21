@@ -6,7 +6,7 @@ apt-get -y dist-upgrade
 apt-get -y install xserver-xorg xinit
 apt-get -y install xfce4 xfce4-goodies
 apt-get -y install lightdm wpagui
-apt-get -y install software-properties-common python-software-properties build-essential debian-keyring oracle-java8-jdk mousepad iceweasel rc-gui git mlocate synaptic screen xrdp piclone geany
+apt-get -y install software-properties-common python-software-properties build-essential debian-keyring oracle-java8-jdk mousepad iceweasel rc-gui mlocate synaptic screen xrdp piclone
 #Older ircircDDBGateway
 apt-get -y install libwxbase2.8-0 libwxgtk2.8-0 gawk ntpdate libsigsegv2
 #Newer ircDDBGateway
