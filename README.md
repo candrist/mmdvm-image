@@ -16,6 +16,7 @@ This is created by Chris Andrist, KC7WSU. This process is used to create the DMR
  - sudo reboot
 
 2. Download Scripts
+  - sudo apt-get install git
   - git clone https://github.com/candrist/mmdvm-image.git /home/pi/Scripts
 
 3. Run initial install file
