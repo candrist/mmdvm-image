@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #Stop MMDVMHost
-pkill -f /home/pi/Applications/MMDVMHost
-pkill -f ircddbgateway
-pkill -f ircddbgatewayconfig
-pkill -f ircddbgw_conf
+sudo pkill -f /home/pi/Applications/MMDVMHost
+sudo pkill -f ircddbgateway
+sudo pkill -f ircddbgatewayconfig
+sudo pkill -f ircddbgw_conf
 #Remove Old MMDVM.ini
 rm -Rf /home/pi/MMDVM_*.ini
 #Remove Script Logs
