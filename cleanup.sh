@@ -12,14 +12,15 @@ rm -Rf /home/pi/Logs/*
 #Remove MMDVMHost Logs
 rm -Rf /home/pi/Applications/MMDVMHost/MMDVM-*.log
 #Make Sure Folders Exist and Have Correct Permissions for ircDDBGateway
+sudo chmod -R 0777 /home/opendv
 #sudo mkdir -p /usr/local/var/log/opendv
 #sudo chown pi:pi /usr/local/var/log/opendv
 #sudo mkdir -p /usr/local/etc/opendv
 #sudo chown pi:pi /usr/local/etc/opendv
 #Remove ircDDBGateway Config and Logs
+rm -Rf /home/pi/*.log
 #rm -Rf /usr/local/var/log/opendv/*
 #rm -Rf /usr/local/etc/opendv/*
-rm -Rf /home/pi/*.log
 #Clear Bash History
 cat /dev/null > /home/pi/.bash_history
 history -c
