@@ -19,6 +19,7 @@ rm -Rf /home/pi/Applications/MMDVMHost/MMDVM-*.log
 #Remove ircDDBGateway Config and Logs
 #rm -Rf /usr/local/var/log/opendv/*
 #rm -Rf /usr/local/etc/opendv/*
+rm -Rf /home/pi/*/log
 #Clear Bash History
 cat /dev/null > /home/pi/.bash_history
 history -c
