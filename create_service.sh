@@ -16,10 +16,10 @@ ExecStop=/usr/bin/screen -S MMDVMHost -X quit
 WantedBy=multi-user.target
 EOL
 
-#Create Timer - 60sec Delay
+#Create Timer - 90sec Delay
 cat > /lib/systemd/system/mmdvmhost.timer << EOL
 [Timer]
-OnStartupSec=60
+OnStartupSec=90
 
 [Install]
 WantedBy=multi-user.target
