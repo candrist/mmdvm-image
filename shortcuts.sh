@@ -9,7 +9,7 @@ GenericName=Edit MMDVM.ini
 Exec=mousepad /home/pi/MMDVM.ini
 Icon=
 Terminal=false
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-mmdvmcal.desktop << EOL
@@ -17,10 +17,10 @@ cat > /usr/share/applications/mmdvm-mmdvmcal.desktop << EOL
 Type=Application
 Name=MMDVM Calibration
 GenericName=Start MMDVMCal
-Exec=xfce4-terminal --working-directory /home/pi/Applications/MMDVMCal -e "/home/pi/Applications/MMDVMCal/MMDVMCal /dev/ttyACM0"
+Exec=lxterminal --working-directory="/home/pi/Applications/MMDVMCal" --command="/home/pi/Applications/MMDVMCal/MMDVMCal /dev/ttyACM0"
 Icon=
 Terminal=false
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-mmdvmhost_start.desktop << EOL
@@ -28,10 +28,10 @@ cat > /usr/share/applications/mmdvm-mmdvmhost_start.desktop << EOL
 Type=Application
 Name=MMDVMHost Start
 GenericName=MMDVMHost Start
-Exec=xfce4-terminal --working-directory /home/pi/Applications/MMDVMHost -e "/home/pi/Applications/MMDVMHost/MMDVMHost /home/pi/MMDVM.ini"
+Exec=lxterminal --working-directory="/home/pi/Applications/MMDVMHost" --command="/home/pi/Applications/MMDVMHost/MMDVMHost /home/pi/MMDVM.ini"
 Icon=
 Terminal=false
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-mmdvmhost_stop.desktop << EOL
@@ -42,7 +42,7 @@ GenericName=MMDVMHost Stop
 Exec=pkill -f /home/pi/Applications/MMDVMHost
 Icon=
 Terminal=false
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-mmdvmhost_service_console.desktop << EOL
@@ -53,7 +53,7 @@ GenericName=MMDVMHost Background Service Console
 Exec=screen -r MMDVMHost
 Icon=
 Terminal=true
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-mmdvmhost_service_start.desktop << EOL
@@ -64,7 +64,7 @@ GenericName=MMDVMHost Background Service Start
 Exec=sudo systemctl start mmdvmhost.service
 Icon=
 Terminal=false
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-mmdvmhost_service_stop.desktop << EOL
@@ -75,7 +75,7 @@ GenericName=MMDVMHost Background Service Stop
 Exec=sudo systemctl stop mmdvmhost.service
 Icon=
 Terminal=false
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-mmdvmhost_service_restart.desktop << EOL
@@ -86,7 +86,7 @@ GenericName=MMDVMHost Background Service Restart
 Exec=sudo systemctl restart mmdvmhost.service
 Icon=
 Terminal=false
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-update.desktop << EOL
@@ -97,7 +97,7 @@ GenericName=Update All
 Exec=/home/pi/Scripts/update.sh
 Icon=
 Terminal=true
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-rebuild.desktop << EOL
@@ -108,7 +108,7 @@ GenericName=Rebuild From Source
 Exec=/home/pi/Scripts/rebuild.sh
 Icon=
 Terminal=true
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
 
 cat > /usr/share/applications/mmdvm-resetini.desktop << EOL
@@ -119,41 +119,5 @@ GenericName=Reset MMDVM.ini
 Exec=/home/pi/Scripts/resetini.sh
 Icon=
 Terminal=true
-Categories=HamRadio;
-EOL
-
-cat > /usr/share/applications/mmdvm-ircddb.desktop << EOL
-[Desktop Entry]
-Type=Application
-Name=ircDDB Gateway
-GenericName=ircDDB Gateway
-Exec=ircddbgateway -gui -nolog
-Icon=
-Terminal=false
-Categories=HamRadio;
-EOL
-
-#Remove Old Shortcut
-rm -Rf /usr/share/applications/mmdvm-ircddbconfig.desktop
-
-cat > /usr/share/applications/mmdvm-ircddb_gui_config.desktop << EOL
-[Desktop Entry]
-Type=Application
-Name=ircDDB Gateway Graphical Config
-GenericName=ircDDB Gateway Graphical Config
-Exec=ircddbgatewayconfig
-Icon=
-Terminal=false
-Categories=HamRadio;
-EOL
-
-cat > /usr/share/applications/mmdvm-ircddb_cli_config.desktop << EOL
-[Desktop Entry]
-Type=Application
-Name=ircDDB Gateway Command Line Config
-GenericName=ircDDB Gateway Command Line Config
-Exec=sudo ircddbgw_conf
-Icon=
-Terminal=true
-Categories=HamRadio;
+Categories=AmateurRadio;
 EOL
