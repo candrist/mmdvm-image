@@ -17,6 +17,7 @@ This is created by Chris Andrist, KC7WSU. This process is used to create the DMR
 2. Update Raspberry Pi
  - sudo apt-get update
  - sudo apt-get -y dist-upgrade
+ - sudo reboot
  
 3. Download Scripts
   - git clone https://github.com/candrist/mmdvm-image.git /home/pi/Scripts
