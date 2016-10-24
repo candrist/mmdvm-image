@@ -24,7 +24,7 @@ This is created by Chris Andrist, KC7WSU. This process is used to create the DMR
 4. Run initial install file
   - sudo /home/pi/Scripts/install.sh
 
-5. Add Ham Radio Menu to XFCE
+5. Add Amateur Radio Menu
 
   - sudo nano /etc/xdg/menus/lxde-pi-applications.menu
 
