@@ -1,9 +1,7 @@
 # MMDVM Raspberry Pi Image Scripts
 
 ### Purpose
-This will enable you to take a stock Raspbian Jessie Lite and have a complete MMDVM System.
-
-It uses XFCE4 for the GUI and you can access it via rdp.
+This will enable you to take a stock Raspbian Jessie and have a complete MMDVM System.
 
 This is created by Chris Andrist, KC7WSU. This process is used to create the DMR-UTAH MMDVM Images available [here](http://www.dmr-utah.net/support/mmdvm/images/).
 
@@ -12,40 +10,48 @@ This is created by Chris Andrist, KC7WSU. This process is used to create the DMR
   - sudo raspi-config
     - Expand Filesystem
     - Disable Serial
+    - Enable VNC
     - Localization
  - sudo reboot
 
-2. Download Scripts
-  - sudo apt-get install git
+2. Update Raspberry Pi
+ - sudo apt-get update
+ - sudo apt-get -y dist-upgrade
+ 
+3. Download Scripts
   - git clone https://github.com/candrist/mmdvm-image.git /home/pi/Scripts
 
-3. Run initial install file
+4. Run initial install file
   - sudo /home/pi/Scripts/install.sh
-  - sudo reboot
 
-4. Add Ham Radio Menu to XFCE
+5. Add Ham Radio Menu to XFCE
 
-  - sudo nano /etc/xdg/menus/xfce-applications.menu
+  - sudo nano /etc/xdg/menus/lxde-pi-applications.menu
 
-  - Add Ham Radio Section
+  - Add Amateur Radio Section
 
   ```xml
-    <Menu>
-        <Name>HamRadio</Name>
-        <Directory>ham-radio.directory</Directory>
-        <Include>
-            <Category>HamRadio</Category>
-        </Include>
-    </Menu>
+        <!-- Amateur Radio -->
+        <Menu>
+                <Name>Amateur Radio</Name>
+                <Directory>lxde-amateur-radio.directory</Directory>
+                <Include>
+                        <And>
+                                <Category>AmateurRadio</Category>
+                        </And>
+                </Include>
+        </Menu> <!-- End Amateur Radio -->
   ```
 
-5. XFCE Customizations
-  - Panel
-    - Action Items - Add Restart
-    - Remove Lower Panel
-  - Set Background
+  - Edit Layout Section
 
-6. Install Applications from  "Xfce Terminal"
+  ```xml
+		<Menuname>Amateur Radio</Menuname>
+  ```
+  
+ - sudo reboot
+
+6. Install Applications from  "lxTerminal"
   - /home/pi/Scripts/install_apps.sh
   
 7. Create Shortcuts
@@ -54,7 +60,7 @@ This is created by Chris Andrist, KC7WSU. This process is used to create the DMR
 8. Create Service
   - sudo /home/pi/Scripts/create_service.sh
 
-9. Run from Ham Radio Menu
+9. Run from Amateur Radio Menu
   - Rebuild From Source
   - Reset MMDVM.ini
 
