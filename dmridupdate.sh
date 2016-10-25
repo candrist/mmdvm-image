@@ -94,4 +94,4 @@ fi
 curl 'http://www.dmr-marc.net/cgi-bin/trbo-database/datadump.cgi?table=users&format=csv&header=0' 2>/dev/null | awk -F"," '{printf "%s\t%s\t%s\n", $1, $2, $4 == "" ? $3 : $4}' | sed -e 's/\(.\) .*/\1/g' > ${DMRIDFILE}
 
 # Restart MMDVMHost
-eval ${RESTARTCOMMAND}
+# eval ${RESTARTCOMMAND}
