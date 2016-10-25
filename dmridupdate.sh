@@ -5,6 +5,7 @@
 # DMRIDUpdate.sh
 #
 # Copyright (C) 2016 by Tony Corbett G0WFV
+# Modified by Chris Andrist, KC7WSU for DMR-UTAH
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -49,7 +50,7 @@
 #                              CONFIGURATION
 #
 # Full path to DMR ID file
-DMRIDFILE=/path/to/DMR/ID/file/DMRIds.dat
+DMRIDFILE=/home/pi/Applications/DMRIds.dat
 #
 # How many DMR ID files do you want backed up (0 = do not keep backups)
 DMRFILEBACKUP=1
@@ -64,8 +65,8 @@ RESTARTCOMMAND="systemctl restart mmdvmhost.service"
 #
 ###############################################################################
 
-# Check we are root
-if [ "$(id -u)" != "0" ] 
+# Check we are pi user
+if [ "$(id -u)" != "1000" ] 
 then
 	echo "This script must be run as root" 1>&2
 	exit 1
