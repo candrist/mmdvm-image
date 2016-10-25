@@ -50,7 +50,7 @@
 #                              CONFIGURATION
 #
 # Full path to DMR ID file
-DMRIDFILE=/home/pi/Applications/DMRIds.dat
+DMRIDFILE=/home/pi/Applications/MMDVMHost/DMRIds.dat
 #
 # How many DMR ID files do you want backed up (0 = do not keep backups)
 DMRFILEBACKUP=1
