@@ -121,3 +121,14 @@ Icon=
 Terminal=true
 Categories=AmateurRadio;
 EOL
+
+cat > /usr/share/applications/mmdvm-updatedmriddb.desktop << EOL
+[Desktop Entry]
+Type=Application
+Name=Update DMR ID Database
+GenericName=Update DMR ID Database
+Exec=/home/pi/Scripts/dmridupdate.sh
+Icon=
+Terminal=false
+Categories=AmateurRadio;
+EOL
