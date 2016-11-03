@@ -29,7 +29,7 @@ EOL
 chmod 755 /lib/systemd/system/mmdvmhost.service
 chmod 755 /lib/systemd/system/mmdvmhost.timer
 #Create Symbolic Link for Service
-ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.timer
+ln -s /lib/systemd/system/mmdvmhost.timer /etc/systemd/system/mmdvmhost.timer
 ln -s /lib/systemd/system/mmdvmhost.service /etc/systemd/system/mmdvmhost.service
 #Pickup New Service and Enable Timer
 systemctl daemon-reload
