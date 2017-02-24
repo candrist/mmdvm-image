@@ -9,7 +9,7 @@ rm -Rf /home/pi/Logs/*
 # Remove MMDVMHost Logs
 rm -Rf /home/pi/Applications/MMDVMHost/MMDVM-*.log
 # Remove Old DMRIds.dat files
-rm -Rf /home/pi/Applications/MMDVMHost/DMRIds.dat
+#rm -Rf /home/pi/Applications/MMDVMHost/DMRIds.dat
 rm -Rf /home/pi/Applications/MMDVMHost/DMRIds.dat.*
 # Clear Bash History
 cat /dev/null > /home/pi/.bash_history
