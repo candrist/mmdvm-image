@@ -16,6 +16,7 @@ systemctl stop serial-getty@ttyAMA0.service
 systemctl disable serial-getty@ttyAMA0.service
 systemctl stop hciuart
 systemctl disable hciuart
+sed -i -e 's/console=serial0,115200 console=tty1/console=tty1/' /boot/cmdline.txt
 sed -i -e 's/enable_uart=0/enable_uart=1/' /boot/config.txt
 bash -c 'echo " " >> /boot/config.txt'
 bash -c 'echo "# Disable Bluetooth on Raspberry Pi 3" >> /boot/config.txt'
